@@ -10,28 +10,28 @@
     "start": "node index.js",
     "server": "nodemon index.js --ignore tests",
     "client": "npm run start --prefix client",
-    "test": "jest",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.188.0",
-    "body-parser": "^1.17.2",
-    "concurrently": "^3.5.0",
+    "aws-sdk": "^2.585.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^3.6.1",
     "cookie-session": "^2.0.0-beta.2",
-    "express": "^4.15.3",
-    "jest": "^22.1.4",
+    "express": "^4.17.1",
+    "jest": "^22.4.4",
     "migrate-mongoose": "^3.2.2",
-    "mongoose": "^4.11.1",
-    "nodemon": "^1.11.0",
+    "mongoose": "^4.13.19",
+    "nodemon": "^1.19.4",
     "passport": "^0.3.2",
     "passport-google-oauth20": "^1.0.0",
     "path-parser": "^2.0.2",
-    "puppeteer": "^1.0.0",
+    "puppeteer": "^1.20.0",
     "redis": "^2.8.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.3.3"
   }
 }
